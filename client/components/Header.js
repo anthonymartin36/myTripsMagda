@@ -9,15 +9,7 @@ import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 import { Link } from "react-router-dom";
 
-const styleSheet = createStyleSheet({
-  root: {
-    marginTop: 30,
-    width: '100%',
-  },
-  flex: {
-    flex: 1,
-  },
-});
+
 
 function ButtonAppBar(props) {
   const classes = props.classes;
@@ -41,4 +33,4 @@ ButtonAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styleSheet)(ButtonAppBar);
+export default withStyles()(ButtonAppBar);

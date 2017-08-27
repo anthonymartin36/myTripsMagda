@@ -7,31 +7,6 @@ import AddIcon from "material-ui-icons/Add"
 import { withStyles, createStyleSheet } from "material-ui/styles"
 import Button from "material-ui/Button"
 
-const styleSheet = createStyleSheet(theme => ({
-  card: {
-    maxWidth: 250,
-    padding: 16,
-    margin: 10
-  },
-  root: {
-    flexGrow: 1,
-    marginTop: 30
-  },
-  paper: {
-    padding: 16,
-    textAlign: "center",
-    color: theme.palette.text.secondary
-  },
-  button: {
-    position: "fixed",
-    right: "50px",
-    bottom: "50px"
-  },
-  iButton: {
-    margin: theme.spacing.unit,
-  }
-}));
-
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -83,4 +58,4 @@ App.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styleSheet)(App);
+export default withStyles()(App);

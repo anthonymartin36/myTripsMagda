@@ -6,12 +6,7 @@ import Paper from "material-ui/Paper"
 import Typography from "material-ui/Typography"
 
 
-const styleSheet = createStyleSheet(theme => ({
-  root: theme.mixins.gutters({
-    paddingTop: 16,
-    paddingBottom: 16,
-  })
-}));
+
 
 class Place extends React.Component {
   constructor(props) {
@@ -62,4 +57,4 @@ class Place extends React.Component {
     classes: PropTypes.object.isRequired
   };
 
-  export default withStyles(styleSheet)(Place);
+  export default withStyles()(Place);

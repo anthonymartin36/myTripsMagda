@@ -6,6 +6,7 @@
   "main": "server/index.js",
   "scripts": {
     "postinstall": "webpack",
+    "dev": "nodemon --watch server & webpack --watch",
     "start": "node server/index",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff",
     "watch": "nodemon -e js,jsx -x npm test",
